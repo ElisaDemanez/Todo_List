@@ -1,0 +1,21 @@
+body {
+  background-image: url(https://static.pexels.com/photos/242236/pexels-photo-242236.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 2% 20%; }
+  body h2 {
+    text-align: center; }
+  body .input {
+    width: 60%; }
+  body .input:checked + label {
+    text-decoration: line-through; }
+  body a {
+    width: 20%;
+    align-self: center;
+    margin: 15px; }
+  body ul {
+    color: #272525;
+    border-radius: 5px; }

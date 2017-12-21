@@ -1,0 +1,1 @@
+function add(){inputed=document.getElementById("task").value,console.log(inputed)}var inputed;console.log("jslaunched"),document.getElementById("button").addEventListener("click",add),console.log("onclick");
