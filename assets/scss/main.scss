@@ -1,0 +1,103 @@
+
+// {background-color:#26a69a !important}.teal-text.text-lighten-1{color:#26a69a !important}.teal.darken-1
+
+
+/* .btn:hover, .btn-large:hover {
+    background-color: #86AF49; }
+    .btn, .btn-large {
+        background-color: #476A30;
+    }
+    
+} */
+body
+{
+    background-image: url(https://static.pexels.com/photos/242236/pexels-photo-242236.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-color: #D0D0D0;
+    flex-direction: column;
+    align-content: center;
+    padding : 2% 13%;
+    h2 {
+        
+        text-align: center;
+        
+    }
+   .form {
+        margin: 15%;
+        text-align: left;
+
+    }
+
+    ul#ulList {
+        background-color:rgba(39, 37, 37, 0.178);
+        border-radius: 5px;
+        padding: 20px; 
+        line-height: 2;  
+        width: 550px;
+        
+    }
+    label {
+        
+        color: rgb(34, 34, 34);
+        // text-overflow: ellipsis;
+         
+        
+        
+    }
+    label:hover {
+        text-overflow: inherit;
+        overflow: visible;
+    }
+    
+    .inputToCheck {
+        width: 60%;
+    }
+    
+    .inputToCheck:checked +label {
+        
+        
+        text-decoration: line-through; 
+        color : rgb(73, 73, 73);
+        
+    }
+    
+    
+    
+    
+    a {
+        width: 20%;
+        align-self: left;
+        margin:15px;
+    }
+    .container {
+        
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+        width:100%;
+        padding: 5%;
+        
+        ul.sorting {
+            
+            background-color:rgba(39, 37, 37, 0.178);
+            border-radius: 5px;
+            padding: 20px; 
+            line-height: 2;
+            max-height: 130px;
+        }
+        
+        input.with-gap:checked + label {
+            color : rgb(73, 73, 73);
+        }
+        
+    }
+}
+
+// .btn{
+    //     background-color :  #476A30
+    //     // background-color: #86C1AA; }   
+    // .btn:hover {
+        //  background-color: #86C1AA;
+        // }

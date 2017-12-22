@@ -10,38 +10,38 @@
 <body>
     <h2>Mah To-do list</h2>
     
-</form>
-<div class="input-field col s6">
+<div class="form">
+<div class="input-field ">
     <input placeholder="Type your task to add ! " id="task" type="text" class="validate">
     <label for="task">Task</label>
 </div>
 <a class="waves-effect waves-light btn" id="button">Add it ! </a>
-</form>
+</div>
 
-
-    <ul>
-        <li> 
-            <p>
-                <input type="checkbox" class="input" id="test1" />
-                <label for="test1">Content</label>
-            </p>
-        </li>
-        <li> 
-            <p>
-                <input type="checkbox" class="input" id="test2" />
-                <label for="test2">Content</label>
-            </p>
-        </li>
-        <li> 
-            <p>
-                <input type="checkbox" class="input" id="test3" />
-                <label for="test3">Content</label>
-            </p>
-        </li>
-        <li></li>
+<div class="container">
+    <ul id="ulList">
+        <!-- <li> 
+            <input type="checkbox" class="input" id="test1" />
+            <label for="test1">Content</label>
+        </li>  -->
     </ul>
     
-    
+    <ul class ="sorting">
+        <li>
+            <input type="radio" name="group1" class="with-gap" id="AllItems" />
+            <label for="AllItems">Display all</label>
+        </li>
+        <li>
+            <input type="radio" name="group1" class="with-gap" id="ToDoItems" />
+            <label for="ToDoItems">Display tasks to do</label>
+        </li>
+        <li>
+            <input type="radio" name="group1" class="with-gap" id="DoneItems" />
+            <label for="DoneItems">Display tasks completed</label>
+        </li>
+    </ul>
+</div>
+
 
 
 <script src ="./dist/js/jquery.min.js"></script>
