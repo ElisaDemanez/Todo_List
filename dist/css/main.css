@@ -16,25 +16,21 @@ body {
   padding: 2% 13%; }
   body h2 {
     text-align: center; }
+  body h5 {
+    margin-top: 0px;
+    color: #494949; }
   body .form {
     margin: 15%;
     text-align: left; }
-  body ul#ulList {
-    background-color: rgba(39, 37, 37, 0.178);
-    border-radius: 5px;
-    padding: 20px;
-    line-height: 2;
-    width: 550px; }
-  body label {
-    color: #222222; }
-  body label:hover {
-    text-overflow: inherit;
-    overflow: visible; }
-  body .inputToCheck {
-    width: 60%; }
-  body .inputToCheck:checked + label {
-    text-decoration: line-through;
-    color: #494949; }
+    body .form .onlyAlignRow {
+      display: flex;
+      justify-content: space-around; }
+  body .onlyAlignRow {
+    display: flex;
+    justify-content: space-between; }
+  body ul.selectList {
+    display: flex;
+    flex-direction: column; }
   body a {
     width: 20%;
     align-self: left;
@@ -45,11 +41,46 @@ body {
     flex-direction: row;
     width: 100%;
     padding: 5%; }
+    body .container .allList {
+      display: flex;
+      flex-direction: column; }
+    body .container ul.ulList {
+      background-color: rgba(39, 37, 37, 0.178);
+      border-radius: 5px;
+      padding: 20px;
+      line-height: 2;
+      width: 550px;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column; }
+      body .container ul.ulList p {
+        margin-top: 4px; }
+      body .container ul.ulList li {
+        margin: 10px; }
+      body .container ul.ulList a {
+        height: inherit;
+        margin: 0;
+        margin-left: 10px;
+        line-height: 30px;
+        font-size: 12px;
+        width: auto;
+        background-color: rgba(39, 37, 37, 0.178);
+        padding: 2px 5px; }
+      body .container ul.ulList .inputToCheck {
+        width: 60%; }
+      body .container ul.ulList .inputToCheck:checked + label {
+        text-decoration: line-through;
+        color: #494949; }
     body .container ul.sorting {
       background-color: rgba(39, 37, 37, 0.178);
       border-radius: 5px;
       padding: 20px;
       line-height: 2;
-      max-height: 130px; }
+      max-height: 230px; }
     body .container input.with-gap:checked + label {
       color: #494949; }
+  body label {
+    color: #222222; }
+  body label:hover {
+    text-overflow: inherit;
+    overflow: visible; }

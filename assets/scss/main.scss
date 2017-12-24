@@ -24,53 +24,40 @@ body
         text-align: center;
         
     }
-   .form {
+    h5 {
+        margin-top:0px;
+        color : rgb(73, 73, 73);
+    }
+    .form {
         margin: 15%;
         text-align: left;
 
-    }
-
-    ul#ulList {
-        background-color:rgba(39, 37, 37, 0.178);
-        border-radius: 5px;
-        padding: 20px; 
-        line-height: 2;  
-        width: 550px;
-        
-    }
-    label {
-        
-        color: rgb(34, 34, 34);
-        // text-overflow: ellipsis;
-         
-        
-        
-    }
-    label:hover {
-        text-overflow: inherit;
-        overflow: visible;
+        .onlyAlignRow{
+            display:flex;
+            justify-content: space-around;
+            
+        }
     }
     
-    .inputToCheck {
-        width: 60%;
-    }
-    
-    .inputToCheck:checked +label {
-        
-        
-        text-decoration: line-through; 
-        color : rgb(73, 73, 73);
+    .onlyAlignRow{
+        display:flex;
+        justify-content: space-between;
         
     }
-    
-    
-    
-    
+    ul.selectList{
+        
+        display: flex;
+        flex-direction: column;
+        
+        
+    }   
+    // upper section   
     a {
         width: 20%;
         align-self: left;
         margin:15px;
     }
+    
     .container {
         
         display: flex;
@@ -78,6 +65,52 @@ body
         flex-direction: row;
         width:100%;
         padding: 5%;
+        //lists
+        .allList {
+            display:flex;
+            flex-direction: column;
+        }
+        ul.ulList {
+            background-color:rgba(39, 37, 37, 0.178);
+            border-radius: 5px;
+            padding: 20px; 
+            line-height: 2;  
+            width: 550px;
+            font-size:12px;
+            display: flex;
+            flex-direction: column;
+
+            p{
+                margin-top: 4px;
+            }
+            li {
+                margin: 10px;
+            }
+            
+            a {
+                height: inherit;
+                margin:0;
+                margin-left: 10px;
+                line-height: 30px;
+                font-size:12px;
+                width: auto;
+                background-color: rgba(39, 37, 37, 0.178);
+                padding:2px 5px ; 
+            }
+            
+            .inputToCheck {
+                width: 60%;
+            }
+            
+            .inputToCheck:checked +label {
+                
+                
+                text-decoration: line-through; 
+                color : rgb(73, 73, 73);
+                
+            }
+            
+        }
         
         ul.sorting {
             
@@ -85,13 +118,26 @@ body
             border-radius: 5px;
             padding: 20px; 
             line-height: 2;
-            max-height: 130px;
+            max-height: 230px;
         }
         
         input.with-gap:checked + label {
             color : rgb(73, 73, 73);
         }
         
+    }
+    
+    label {
+        
+        color: rgb(34, 34, 34);
+        // text-overflow: ellipsis;
+        
+        
+        
+    }
+    label:hover {
+        text-overflow: inherit;
+        overflow: visible;
     }
 }
 
