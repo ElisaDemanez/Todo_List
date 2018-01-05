@@ -8,96 +8,91 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <h2>Mah To-do list</h2> -->
-    <!-- my input and my add btton  -->
-    <div class="form">
+
+   <!-- my task input  -->
+   <div class="form">
+    <div class="input-field ">
+        <input placeholder="Type your task to add ! " id="task" type="text" class="validate">
+        <label for="task">Task</label>
+    </div>
+
+    <div class="onlyAlignRow">
+        <!-- list radio selector -->
+        <ul id ="selectList" >
+            <span>Select where to add it : </span>
+            <li>
+              <input name="selectList" class="with-gap" id="ButtonMy first list" type="radio">
+              <label for="ButtonMy first list">My first list</label>
+          </li>
+
+      </ul>
+      <!-- Add it button -->
+      <a class="waves-effect waves-light btn" id="button">Add it ! </a>
+
+  </div>
+</div>
+
+<!-- my list and filter container -->
+<div class="container">
+    <!-- all ul container -->
+    <div id="allList">
+        <!-- my list -->
+
+        <div class="ulOuterBlock">
+            <ul class="ulList" id="ulMy first list">
+              <div class="onlyAlignRow"> 
+                  <h5>My first list :</h5>
+                  <p>
+                      <input class="filled-in favorite" id="filled-in-boxMy first list" type="checkbox">
+                      <label for="filled-in-boxMy first list">Favorite</label>
+                  </p>
+              </div>
+
+          </ul>
+          <span class="ulDeleter">
+             <a class="waves-effect waves-teal btn-flat deleter ulDeleter" id="ulButtonMy first list" onclick="removeUl(this)">Delete it!</a>
+         </span>
+     </div>
+ </div>
+
+ <!-- options -->
+ <ul class ="sorting" >
+    <h5>Options: </h5>
+    <li>
+        <input type="checkbox" class="filled-in" id="selectFavorites"  />
+        <label for="selectFavorites">Display favorites only </label>
+    </li>
+    <br>
+    <li>
+        <input type="radio" name="group1" class="with-gap" id="AllItems" />
+        <label for="AllItems">Display all tasks</label>
+    </li>
+    <li>
+        <input type="radio" name="group1" class="with-gap" id="ToDoItems" />
+        <label for="ToDoItems">Display tasks to do</label>
+    </li>
+    <li>
+        <input type="radio" name="group1" class="with-gap" id="DoneItems" />
+        <label for="DoneItems">Display tasks completed</label>
+    </li>
+    <div class="createUlButt">
+        <h6>Create a new list :</h6>
         <div class="input-field ">
-            <input placeholder="Type your task to add ! " id="task" type="text" class="validate">
-            <label for="task">Task</label>
+            <input id="listEntry" type="text" class="validate">
         </div>
-        
-        <div class="onlyAlignRow">
-            
-            <ul class ="selectList" >
-                <span>Select where to add it : </span>
-                <li>
-                    <input type="radio" name="selectList" class="with-gap" id="List1" />
-                    <label for="List1">List1</label>
-                </li>
-                <li>
-                    <input type="radio" name="selectList" class="with-gap" id="List2" />
-                    <label for="List2">List2</label>
-                </li>
-                
-            </ul>
-            
-            <!-- Add it button -->
-            <a class="waves-effect waves-light btn" id="button">Add it ! </a>
-            
-        </div>
+        <a class="waves-effect waves-light btn" id ="createUlButton">Create it!</a>
     </div>
-    
-    <!-- my list and filter container -->
-    <div class="container">
-        <div class="allList">
-            <!-- my list -->
-            <ul class="ulList" id="ulList1">
-                <!-- header -->
-                <div class="onlyAlignRow"> 
-                    <h5>Todo1 :</h5>
-                    <p>
-                        <input type="checkbox" class="filled-in favorite" id="filled-in-box1"  />
-                        <label for="filled-in-box1">Favorite</label>
-                    </p>
-                </div>
-                
-                
-            </ul>
-            <ul class="ulList"id="ulList2">
-                <div class="onlyAlignRow">
-                    <h5>Todo2 :</h5> <p>
-                        <input type="checkbox" class="filled-in favorite" id="filled-in-box2" />
-                        <label for="filled-in-box2">Favorite</label>
-                    </p>
-                </div>
-                
-            </ul>
-        </div>
-        <ul class ="sorting" >
-            <h5>Filters : </h5>
-            <li>
-                    <input type="checkbox" class="filled-in" id="selectFavorites"  />
-                    <label for="selectFavorites">Display favorites only </label>
-                </li>
-                <br>
-            <li>
-                <input type="radio" name="group1" class="with-gap" id="AllItems" />
-                <label for="AllItems">Display all tasks</label>
-            </li>
-            <li>
-                <input type="radio" name="group1" class="with-gap" id="ToDoItems" />
-                <label for="ToDoItems">Display tasks to do</label>
-            </li>
-            <li>
-                <input type="radio" name="group1" class="with-gap" id="DoneItems" />
-                <label for="DoneItems">Display tasks completed</label>
-            </li>
-            
-           
-        </ul>
-    </div>
-    
-    
-    
-    <script src ="./dist/js/jquery.min.js"></script>
-    <script src ="./dist/js/materialize.min.js"></script>
-    <script src ="./dist/js/main.js"></script>
+
+</ul>
+
+
+</div>
+
+
+
+<script src ="./dist/js/jquery.min.js"></script>
+<script src ="./dist/js/materialize.min.js"></script>
+<script src ="./dist/js/main.js"></script>
 </body>
 </html>
 
-<!-- <li class="liToCheck">
-    <input id="test1" class="inputToCheck" onclick="DoneTime(this)" type="checkbox">
-    <label for="test1" class="label">Eza</label>
-    <span><br>23/11/2017 18h38</span>  
-    <a class="waves-effect waves-teal btn-flat deleter" onclick="remove(this)">Delete it!</a>
-</li> -->

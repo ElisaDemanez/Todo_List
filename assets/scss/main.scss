@@ -31,14 +31,18 @@ body
     .form {
         margin: 15%;
         text-align: left;
-
+        
         .onlyAlignRow{
             display:flex;
             justify-content: space-around;
             
         }
+        a {
+            width: 20%;
+            align-self: left;
+            margin:15px;
+        }
     }
-    
     .onlyAlignRow{
         display:flex;
         justify-content: space-between;
@@ -50,15 +54,12 @@ body
         flex-direction: column;
         
         
-    }   
-    // upper section   
-    a {
-        width: 20%;
-        align-self: left;
-        margin:15px;
-    }
+    }     
+  
     
     .container {
+        
+        
         
         display: flex;
         justify-content:space-between;
@@ -66,47 +67,71 @@ body
         width:100%;
         padding: 5%;
         //lists
+        
         .allList {
             display:flex;
             flex-direction: column;
         }
-        ul.ulList {
+        .ulOuterBlock {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
             background-color:rgba(39, 37, 37, 0.178);
             border-radius: 5px;
             padding: 20px; 
             line-height: 2;  
             width: 550px;
             font-size:12px;
-            display: flex;
-            flex-direction: column;
-
-            p{
-                margin-top: 4px;
-            }
-            li {
-                margin: 10px;
-            }
+            margin: 18px;
             
-            a {
-                height: inherit;
-                margin:0;
-                margin-left: 10px;
-                line-height: 30px;
-                font-size:12px;
-                width: auto;
+            span.ulDeleter
+            {
+                
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: -15px;
+                background-color: transparent;
+            }
+            .ulDeleter {
                 background-color: rgba(39, 37, 37, 0.178);
-                padding:2px 5px ; 
             }
             
-            .inputToCheck {
-                width: 60%;
-            }
             
-            .inputToCheck:checked +label {
+            ul.ulList {
                 
+                display: flex;
+                flex-direction: column;
                 
-                text-decoration: line-through; 
-                color : rgb(73, 73, 73);
+                p{
+                    margin-top: 4px;
+                }
+                li {
+                    margin: 10px;
+                }
+                
+                a {
+                    height: inherit;
+                    margin:0;
+                    margin-left: 10px;
+                    line-height: 30px;
+                    font-size:12px;
+                    width: auto;
+                    background-color: rgba(39, 37, 37, 0.178);
+                    padding:2px 5px ; 
+                }
+                
+                .inputToCheck {
+                    width: 60%;
+                }
+                
+                .inputToCheck:checked +label {
+                    
+                    
+                    text-decoration: line-through; 
+                    color : rgb(73, 73, 73);
+                    
+                }
                 
             }
             
@@ -118,11 +143,17 @@ body
             border-radius: 5px;
             padding: 20px; 
             line-height: 2;
-            max-height: 230px;
+            max-height: 430px;
         }
         
         input.with-gap:checked + label {
             color : rgb(73, 73, 73);
+        }
+
+        .createUlButt {
+            margin-top: 45px;
+
+           
         }
         
     }
